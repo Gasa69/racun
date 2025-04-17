@@ -12,3 +12,20 @@ protected:
     double cijenaBezPDV;
     double postotakPDV;
 
+public:
+
+Stavka();
+    Stavka(unsigned int s, std::string n, int k, double c, double p);
+
+    unsigned int getSifra() const;
+    std::string getNaziv() const;
+    int getKolicina() const;
+    double getCijenaBezPDV() const;
+    double getPostotakPDV() const;
+
+    void setSifra(unsigned int s);
+    void setNaziv(std::string n);
+    void setKolicina(int k);
+    void setCijenaBezPDV(double c);
+    void setPostotakPDV(double p);
+    

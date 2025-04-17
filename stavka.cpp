@@ -13,4 +13,15 @@ int Stavka::getKolicina() const { return kolicina; }
 double Stavka::getCijenaBezPDV() const { return cijenaBezPDV; }
 double Stavka::getPostotakPDV() const { return postotakPDV; }
 
+double Stavka::ukupnaCijena() const {
+    double osnovica = kolicina * cijenaBezPDV;
+    double pdv = osnovica * postotakPDV / 100.0;
+    return osnovica + pdv;
+}
 
+std::istream& operator>>(std::istream& in, Stavka& s) {
+    std::string nazivTemp;
+    char apostrof;
+    std::string pdvStr;
+}
+ 
