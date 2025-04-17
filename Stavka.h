@@ -33,5 +33,4 @@ Stavka();
     friend std::istream& operator>>(std::istream& in, Stavka& s);
     friend std::ostream& operator<<(std::ostream& out, const Stavka& s);
 };
-
 #endif
