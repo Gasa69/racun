@@ -28,4 +28,10 @@ Stavka();
     void setKolicina(int k);
     void setCijenaBezPDV(double c);
     void setPostotakPDV(double p);
-    
+    double ukupnaCijena() const;
+
+    friend std::istream& operator>>(std::istream& in, Stavka& s);
+    friend std::ostream& operator<<(std::ostream& out, const Stavka& s);
+};
+
+#endif

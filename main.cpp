@@ -14,16 +14,16 @@ int main(int argc, char* argv[]) {
         std::cerr << "Greška pri otvaranju datoteke.\n";
         return 1;
     }
-       std::vector<Stavka> stavke;
-        Stavka s;
-        while (file >> s) {
-            stavke.push_back(s);
-        }
-    
-        for (const auto& stavka : stavke) {
-            std::cout << stavka << std::endl;
-        }
-    
-        return 0;
+
+    std::vector<Stavka> stavke;
+    Stavka s;
+    while (file >> s) {
+        stavke.push_back(s);
     }
-    
+
+    for (const auto& stavka : stavke) {
+        std::cout << stavka << std::endl;
+    }
+
+    return 0;
+}
