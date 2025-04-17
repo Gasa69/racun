@@ -23,5 +23,4 @@ public:
     double getUkupnaSuma() const;
     double getSumaPDV() const;
 };
-
 #endif
